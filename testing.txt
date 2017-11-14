@@ -1,0 +1,2 @@
+This is a test of text editor system
+
