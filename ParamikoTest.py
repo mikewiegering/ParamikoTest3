@@ -11,7 +11,7 @@ from getpass import getpass
 
 def main():
 
-        os.chdir('/home/wwt/scripts')
+        os.chdir('/home/wwt/WWT_Automation_Lab/ParamikoTest3/ParamikoTest3')
         establishConnection()
 
 
@@ -49,9 +49,9 @@ def establishConnection():
 
 #       remote_conn.send("show ip int brief\n")
         remote_conn.send("terminal length 0\n")
-        time.sleep(3)
-        remote_conn.send("show run\n")
-        time.sleep(5)
+        time.sleep(10)
+        remote_conn.send("show run brief\n")
+        time.sleep(10)
         output2 = remote_conn.recv(5000)
 
         remote_conn_pre.close
