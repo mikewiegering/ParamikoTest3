@@ -42,7 +42,8 @@ def establishConnection():
         remote_conn=remote_conn_pre.invoke_shell()
 
         output = remote_conn.recv(5000)
-  GNU nano 2.2.6                                      File: GetIPIntConfig_v2.py
+
+
 
 #       remote_conn.send("en\n")
 #       output1 = remote_conn.recv(5000)
