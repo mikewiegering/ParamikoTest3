@@ -52,7 +52,7 @@ def establishConnection():
         remote_conn.send("terminal length 0\n")
         time.sleep(10)
         remote_conn.send("show run brief\n")
-        time.sleep(10)
+        time.sleep(20)
         output2 = remote_conn.recv(5000)
 
         remote_conn_pre.close
